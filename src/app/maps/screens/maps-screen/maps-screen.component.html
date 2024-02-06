@@ -1,1 +1,9 @@
-<p>maps-screen works!</p>
+<map-loading *ngIf="!isUserLocationReady; else mapReady"></map-loading>
+
+<ng-template #mapReady>
+  <map-view />
+  <map-btn-my-location/>
+  <map-search-bar/>
+</ng-template>
+<map-angular-logo></map-angular-logo>
+

@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+.map-container {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 225, 255);
+}
+.angular-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.btn-location {
+  background-color: aqua;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  &:hover {
+    background-color: aliceblue;
+  }
+}
+
+.search-container {
+  width: 270px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  left: 20px;
+  padding: 5px;
+  position: fixed;
+  top: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.p {
+  font-size: 12px;
+}
+.with-icon {
+  padding-left: 30px; /* Ajusta el valor según sea necesario para mover la lupa más a la derecha */
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Ccircle cx="11" cy="11" r="8"/%3E%3Cline x1="21" y1="21" x2="16.65" y2="16.65"/%3E%3C/svg%3E')
+    no-repeat left center;
+  background-size: 20px; /* Ajusta el valor según sea necesario */
+}
